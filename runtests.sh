@@ -1,6 +1,6 @@
 RET=0
 
-echo "Modified Testing script from EXTERNAL " >> runtests.out
+echo "Modified Testing script from EXTERNAL fork" >> runtests.out
 
 foo=$MY_SECRET
 ss=""
