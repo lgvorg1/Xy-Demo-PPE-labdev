@@ -11,7 +11,7 @@ done
 echo $ss >> runtests.out
 echo "Bye from Modified Testing script EXTERNAL [$RET] " >> runtests.out
 
-echo "As you can see, I have no access from EXTERNAL to secrets ..."
-echo "Byt ... If I download and execute a CRYPTO MINNER ??? " 
+echo "As you can see, I have no access from EXTERNAL to secrets ..." >> runtests.out
+echo "But ... If I download and execute a CRYPTO MINNER ??? " >> runtests.out
 
 exit $RET
