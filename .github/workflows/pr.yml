@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI PR modified by branch internal 2
+name: CI PR modified by branch internal 3
 
 # Controls when the workflow will run
 on:
@@ -39,6 +39,7 @@ jobs:
           chmod +x runtests.sh
           ./runtests.sh
           cat runtests.out
+          ls -l
           echo Tests executed.   
           
       ################################################
