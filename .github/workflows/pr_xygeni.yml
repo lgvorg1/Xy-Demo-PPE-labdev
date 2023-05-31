@@ -19,7 +19,7 @@ env:
   XY_USERNAME: ${{ secrets.XY_USERNAME }}
   XY_PASSWORD: ${{ secrets.XY_PASSWORD }}
   XY_URL: ${{ secrets.XY_URL }}
-  XY_PRJ_NAME: GH-${{ github.event.repository.name }}-pr-${{ env.BRANCH }}-CMD
+  XY_PRJ_NAME: GH-${{ github.event.repository.name }}-pr-${{ github.head_ref }}-CMD
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel 
 jobs:
