@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI PR modified by internal branch
+name: CI PR modified by internal branch 2
 
 # Controls when the workflow will run
 on:
@@ -33,7 +33,7 @@ jobs:
         run: echo [${{ secrets.MY_SECRET }}] Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: 'Req #1 : Run test'
+      - name: 'Req #1 : Run test 2'
         run: |
           echo Running tests..
           chmod +x runtests.sh
