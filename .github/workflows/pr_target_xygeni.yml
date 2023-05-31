@@ -19,7 +19,8 @@ env:
   XY_USERNAME: ${{ secrets.XY_USERNAME }}
   XY_PASSWORD: ${{ secrets.XY_PASSWORD }}
   XY_URL: ${{ secrets.XY_URL }}
-  XY_PRJ_NAME: GH-${{ github.event.repository.name }}-prtarget-${{ github.head_ref }}-CMD
+  #XY_PRJ_NAME: GH-${{ github.event.repository.name }}-prtarget-${{ github.head_ref }}-CMD
+  XY_PRJ_NAME: GH-${{ github.event.repository.name }}-CMD
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel 
 jobs:
@@ -40,7 +41,7 @@ jobs:
           ref: "refs/pull/${{ github.event.number }}/merge"
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Git Log
         run: git log
 
       # Runs a set of commands using the runners shell 
