@@ -31,16 +31,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo [${{ secrets.MY_SECRET }}] Hello, world!
-      
-      - name: Save PR number
-        run: |
-          mkdir -p ./pr
-          echo ${{ github.event.number }} > ./pr/NR
-          cat ./pr/NR
-      
-      - name: Shows PR number
-        run: |
-          cat ./pr/NR
 
       # Runs a set of commands using the runners shell
       - name: 'Req #1 : Run test'
